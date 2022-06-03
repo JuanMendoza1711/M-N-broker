@@ -1,0 +1,378 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: white;
+	font-size: 5px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+nav {
+	width: 60%;
+	height: auto;
+	padding: 1.5% 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 10;
+	transition: all 300ms ease;
+}
+nav.sticky {
+	background: white;
+	padding: 0.5% 20%;
+	box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.1);
+	transition: all 300ms ease;
+}
+.logo {
+	width: 45%;
+	background: url(images/logo-blanco.png);
+	background-size: cover;
+	padding-right: 0.5%;
+	height: auto;
+	transition: all 300ms ease;
+}
+nav.sticky .logo {
+	width: 40%;
+	background: url(images/logo-solo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-right: 0.5%;
+	height: auto;
+	transition: all 300ms ease;
+}
+.logo img {
+	width: 100%;
+	filter: opacity(0%);
+}
+.menu {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: flex-end;
+}
+nav.sticky .menu {
+	margin-left: 9%;
+}
+.menu a {
+	font-size: 3em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 800;
+	color: white;
+	border-radius: 20px;
+	text-decoration: none;
+	margin: 0 0;
+	margin-left: 4%;
+	margin-right: 0;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	transition: .5s ease all;
+}
+nav.sticky .menu a {
+	font-size: 2.8em;
+	color: #2B2D42;
+}
+.menu .boton1 {
+	width: 13.5%;
+	padding: 1% 0.5%;
+}
+.menu .boton2 {
+	width: 19%;
+	padding: 1% 0.5%;
+}
+.menu .boton3 {
+	width: 27%;
+	padding: 1% 0.5%;
+}
+nav.sticky .menu .boton1,
+nav.sticky .menu .boton2,
+nav.sticky .menu .boton3 {
+	padding: 0 0;
+}
+.menu a:hover {
+	color: #800F2F;
+	background: white;
+	transition: .5s ease all;
+}
+nav.sticky .menu a:hover {
+	color: #BF262E;
+	background: transparent;
+}
+
+
+header {
+	width: 100%;
+	height: auto;
+}
+.portada {
+	width: 59.6%;
+	height: auto;
+	padding:  0% 20.2%;
+	padding-top: 8%;
+	padding-bottom: 5%;
+	background: rgb(102,15,47);
+	background: linear-gradient(0deg, rgba(102,15,47,1) 0%, rgba(191,38,46,1) 100%);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.titular {
+	width: 50%;
+	height: auto;
+	margin-top: -7.5%;
+}
+h1 {
+	font-size: 8em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 800;
+	color: white;
+}
+h3 {
+	font-size: 4em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 500;
+	color: white;
+}
+.titular h3 {
+	margin: 0 0;
+	margin-top: -2%;
+	margin-bottom: 5%;
+}
+.botonestitular {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+}
+.botonestitular a {
+	font-size: 3.2em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 900;
+	color: #800F2F;
+	background: white;
+	border-radius: 30px;
+	margin: 0;
+	margin-right: 5%;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	transition: .5s ease all;
+}
+.botonestitular .botontitular1 {
+	width: 17%;
+	padding: 1.5% 1.5%;
+}
+.botonestitular .botontitular2 {
+	width: 21%;
+	padding: 1.5% 1.5%;
+}
+.botonestitular a:hover {
+	color: white;
+	background: #BF262E;
+	transition: .5s ease all;
+}
+.imagenportada {
+	width: 44%;
+	height: auto;
+}
+.imagenportada img {
+	width: 100%;
+}
+
+main {
+	width: 59.6%;
+	height: auto;
+	padding: 0 20.2%;
+}
+.nosotros {
+	width: 100%;
+	height: auto;
+	padding: 0 0;
+	padding-top: 6%;
+	padding-bottom: 3%;
+	text-align: center;
+}
+.historia {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	padding-top: 1%;
+	text-align: left;
+}
+h2 {
+	font-size: 6.5em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 800;
+	color: #2B2D42;
+}
+p {
+	font-size: 3.5em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 500;
+	color: #2B2D42;
+}
+.contenedor {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+}
+.slider-contenedor {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+.slider-test {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 6% 0;
+	flex-shrink: 0;
+	text-align: center;
+}
+.slider-test img {
+	width: 20%;
+	object-fit: cover;
+}
+.slider-test h3 {
+	font-size: 4em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 900;
+	color: #2B2D42;
+}
+.consulta {
+	width: 100%;
+	height: auto;
+	padding: 5% 0;
+	margin-bottom: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.infoconsulta {
+	width: 50%;
+	height: auto;
+}
+.infoconsulta h2 {
+	width: 80%;
+}
+.infoconsulta p {
+	width: 70%;
+	margin-top: -1%;
+	margin-bottom: 4%;
+}
+.infoconsulta a {
+	width: 17%;
+	padding: 1.2% 0.7%;
+	font-size: 3.2em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 900;
+	color: #BF262E;
+	background: white;
+	border: #BF262E 2px solid;
+	border-radius: 30px;
+	margin: 0;
+	margin-right: 5%;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	transition: .5s ease all;
+}
+.infoconsulta a:hover {
+	color: white;
+	background: #BF262E;
+	transition: .5s ease all;
+}
+.imagenconsulta {
+	width: 50%;
+	height: auto;
+}
+.imagenconsulta img {
+	width: 100%;
+	border-radius: 30px;
+}
+
+footer {
+	width: 80%;
+	height: auto;
+	padding: 0 10%;
+}
+.piedepagina {
+	width: 74%;
+	height: auto;
+	border-top: 1px solid #2B2D42;
+	padding: 0 13%;
+	padding-top: 5%;
+	padding-bottom: 12%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.logopie {
+	width: 25%;
+	height: auto;
+}
+.logopie img {
+	width: 100%;
+}
+.logopie h3 {
+	font-size: 5em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 900;
+	color: #2B2D42;
+}
+.redes {
+	width: 25%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding-left: 17%;
+}
+.redes h3 {
+	font-size: 3.5em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 900;
+	color: #BF262E;
+}
+.redes h4 {
+	font-size: 3.3em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 700;
+	margin: 5% 0;
+	color: #2B2D42;
+}
+.contacto {
+	width: 25%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+.contacto h3 {
+	font-size: 3.5em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 900;
+	color: #BF262E;
+}
+.contacto h4 {
+	font-size: 3.3em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 700;
+	margin: 5% 0;
+	color: #2B2D42;
+	text-decoration: none;
+}
