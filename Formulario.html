@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>M&N Broker Financiero | Formulario</title>
+	<link rel="stylesheet" href="Formulario.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/4cd798a722.js" crossorigin="anonymous"></script>	
+</head>
+
+<body>
+	
+	<nav>
+		<div class="logo">
+			<a href="index.html"><img src="images/logo-blanco.png"></a>
+		</div>
+		<div class="menu">
+			<a class="boton1" href="Prestamos.html">PRÉSTAMO</a>
+			<a class="boton2" href="Inversionistas.html">INVERSIONISTAS</a>
+			<a class="boton3" href="Preguntas.html">PREGUNTAS FRECUENTES</a>
+		</div>
+	</nav>
+
+	<main>
+		<div class="datos">
+			<div class="titulo-datos">
+				<h2>Datos del solicitante</h2>
+				<h3>Completa los datos para poder realizar la operación</h3>
+			</div>
+			<div  class="formulario">
+				<form action="action_page.php" method="get">
+					<input type="text" name="dni" placeholder="Número de DNI" required>
+					<input type="text" name="nombres" placeholder="Nombres Completos" required>
+					<input type="text" name="apellidos" placeholder="Apellidos Completos" required>
+					<input type="text" name="celular" placeholder="Celular" required>
+					<input type="text" name="correo" placeholder="Correo Electrónico" required>
+					<input type="submit" name="enviar" value="Enviar información">
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="piedepagina">
+			<div class="logopie">
+				<img src="images/logo-color.png">
+				<h3>Av. Aviación 268 Oficina 401</h3>
+			</div>
+			<div class="redes">
+				<h3>Redes</h3>
+				<h4>Facebook</h4>
+				<h4>Whastapp</h4>
+			</div>
+			<div class="contacto">
+				<h3>Contacto</h3>
+				<h4>juanmendoza11h@outlook.com</h4>
+				<h4>989079082</h4>
+			</div>
+		</div>
+	</footer>
